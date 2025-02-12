@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav_graph"
+    app:startDestination="@id/LoginView">
+
+    <fragment
+        android:id="@+id/LoginView"
+        android:name="com.example.umanglearntrack.ui.LoginView"
+        android:label="@string/login_view_label"
+        tools:layout="@layout/loginview">
+
+        <action
+            android:id="@+id/action_LoginView_to_SignupView"
+            app:destination="@id/SignupView" />
+    </fragment>
+    <fragment
+        android:id="@+id/SignupView"
+        android:name="com.example.umanglearntrack.ui.SignUpView"
+        android:label="@string/signup_view_label"
+        tools:layout="@layout/signupview">
+        <action
+            android:id="@+id/action_SignupView_to_LoginView"
+            app:destination="@id/LoginView" />
+    </fragment>
+</navigation>

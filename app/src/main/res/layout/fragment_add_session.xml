@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.AddSession">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Session Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_name"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/editTextSessionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/enter_session_name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+                        <EditText
+                            android:inputType="date"
+                            android:padding="12dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:layout_marginBottom="12dp"
+                            android:id="@+id/editTextDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_date_yyyy_mm_dd" />
+
+            <!-- Start Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+                        <EditText
+                            android:inputType="time"
+                            android:padding="12dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:layout_marginBottom="12dp"
+                            android:id="@+id/editTextStartTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_start_time_hh_mm" />
+
+            <!-- End Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_time"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+                        <EditText
+                            android:inputType="time"
+                            android:padding="12dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:layout_marginBottom="12dp"
+                            android:id="@+id/editTextEndTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_end_time_hh_mm" />
+
+            <!-- Facilitator ID -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facilitator_id"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+                        <EditText
+                            android:inputType="text"
+                            android:padding="12dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:layout_marginBottom="12dp"
+                            android:id="@+id/editTextFacilitatorId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_facilitator_id" />
+
+
+            <Button
+                android:id="@+id/buttonSaveSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_session"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+
+</FrameLayout>
