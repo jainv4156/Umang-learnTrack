@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_activity_nav_graph"
+    app:startDestination="@id/session_List">
+
+    <fragment
+        android:id="@+id/session_List"
+        android:name="com.example.umanglearntrack.ui.home.sessionList.SessionList"
+        android:label="Session List"
+        tools:layout="@layout/session_list">
+
+        <action
+            android:id="@+id/action_session_List_to_add_session"
+            app:destination="@id/add_session" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_session"
+        android:name="com.example.umanglearntrack.ui.home.AddSession"
+        android:label="Add Session"
+        tools:layout="@layout/fragment_add_session">
+        <action
+            android:id="@+id/action_add_session_to_session_List"
+            app:destination="@id/session_List" />
+    </fragment>
+</navigation>
